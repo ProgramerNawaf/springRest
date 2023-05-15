@@ -21,9 +21,13 @@ public class welcomeController {
 
     @GetMapping(path="/check/status")
     public String getStart(){
-        return "<h1>Everything is ok!<br> Use /actuator/health for the last Exer </h1>";
+        return "<h1>Everything is ok!<br> </h1>";
     }
 
+    @GetMapping(path="/health")
+    public String getHealth(){
+        return "<h1>Server health is up and running </h1>";
+    }
 
 
 
